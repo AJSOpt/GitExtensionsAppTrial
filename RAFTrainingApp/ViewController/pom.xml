@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>RAFTrainingApp</groupId>
+  <artifactId>ViewController</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <description>Generated POM from JDeveloper for project ViewController</description>
+  <packaging>war</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>RetailAppsI18nBundles</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsModel</classifier>
+      <version>${raf.version}</version>
+      <!--
+Model Layer Framework
+Include this in your Model projects.
+Basically contains support for server side components.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsViewController</classifier>
+      <version>${raf.version}</version>
+      <!--
+View-Controller Layer Framework
+Include this in your UI/View-Controller projects.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>RetailAppsFrameworkSkinResources</classifier>
+      <version>${raf.version}</version>
+      <!--
+RAF Skin Additions
+Include this in your UI/View-Controller projects.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsBatchClient</classifier>
+      <version>${raf.version}</version>
+      <!--
+Batch Client Framework
+Include this in your batch client project.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsUnitTestFramework</classifier>
+      <version>${raf.version}</version>
+      <!--
+Unit Test Framework
+Include this in your JUnit projects.
+DO NOT SHIP TO CUSTOMERS.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsJunitModel</classifier>
+      <version>${raf.version}</version>
+      <!--
+DO NOT USE.
+Internal to RAF.
+Model objects used for JUnit testing.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsUiTestHarness</classifier>
+      <version>${raf.version}</version>
+      <!--
+Task Flow Test Harness
+Include this in your UI/View-Controller projects.
+DO NOT SHIP TO CUSTOMERS.
+-->
+    </dependency>
+    <!-- Retail Apps UIShell Nav Model Default XMLs as reference. -->
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>RetailAppsUiShellDefaultConfigs</classifier>
+      <type>zip</type>
+      <version>${raf.version}</version>
+      <!--
+Configuration files for Retail Apps UIShell feature.
+-->
+    </dependency>
+    <!-- Runtime Libraries for Consuming Apps - Sources -->
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsBatchClient-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsModel-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsUnitTestFramework-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsViewController-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsJunitModel-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsUiTestHarness-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsServiceModel</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsServiceModel-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsRESTServicesModel</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsRESTServicesModel-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsRESTViewController</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsRESTViewController-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>RetailAppsRESTServices</classifier>
+      <version>${raf.version}</version>
+      <type>ear</type>
+      <!--
+      REST Services exposed by RAF
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsWebSocketRelayServer</artifactId>
+      <classifier>RetailAppsWebSocketRelayServer</classifier>
+      <type>ear</type>
+      <version>${raf.version}</version>
+    </dependency>
+    <!-- Retail Apps Enterprise Resources -->
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsEnterpriseResources</artifactId>
+      <classifier>RetailAppsEnterpriseSecurity</classifier>
+      <version>${raf.version}</version>
+      <type>zip</type>
+    </dependency>
+    <!-- Retail Apps Enterprise Resources -->
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>installdb</artifactId>
+      <version>${raf.version}</version>
+      <!--
+Database Object Deployment tool
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>plsqltypegenerator</artifactId>
+      <classifier>RetailAppsPlSqlCustomTypes</classifier>
+      <version>${raf.version}</version>
+      <!--
+Custom Database Type objects
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>plsqltypegenerator</artifactId>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>plsqljavawrappergenerator</artifactId>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsCollabIntModel</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFramework</artifactId>
+      <classifier>AdfRetailAppsCollabIntModel-source</classifier>
+      <version>${raf.version}</version>
+    </dependency>
+    <!-- Post-Install Navigation Model customization related -->
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsCustomSharedLibRegistryTemplate</artifactId>
+      <version>${raf.version}</version>
+      <classifier>RetailAppsCustomSharedLibRegistryTemplate</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsCustomSharedLibTemplate</artifactId>
+      <version>${raf.version}</version>
+      <classifier>RetailAppsCustomSharedLibTemplate</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- Internal to RAF -->
+    <dependency>
+      <groupId>oracle.retail.tools</groupId>
+      <artifactId>LdifGen</artifactId>
+      <classifier>LdifGen</classifier>
+      <version>${raf.version}</version>
+      <!--
+DO NOT USE.
+Internal to RAF.
+-->
+    </dependency>
+    <!-- Test Application -->
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFrameworkTest</artifactId>
+      <classifier>RetailAppsFrameworkTest</classifier>
+      <type>ear</type>
+      <version>${raf.version}</version>
+      <!--
+DO NOT USE.
+Internal to RAF.
+Test Application EAR.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFrameworkTestSharedLibRegistry</artifactId>
+      <classifier>RetailAppsFrameworkTestSharedLibRegistry</classifier>
+      <type>war</type>
+      <version>${raf.version}</version>
+      <!--
+DO NOT USE.
+Internal to RAF.
+Test Application EAR.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFrameworkTestSharedLib</artifactId>
+      <classifier>RetailAppsFrameworkTestSharedLib</classifier>
+      <type>war</type>
+      <version>${raf.version}</version>
+      <!--
+DO NOT USE.
+Internal to RAF.
+Test Application EAR.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFrameworkTest</artifactId>
+      <classifier>EarRetailAppsFrameworkTestEJB</classifier>
+      <type>ear</type>
+      <version>${raf.version}</version>
+      <!--
+DO NOT USE.
+Internal to RAF.
+Test Application EAR.
+-->
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsFrameworkServiceTest</artifactId>
+      <classifier>RetailAppsFrameworkServiceTest</classifier>
+      <type>ear</type>
+      <version>${raf.version}</version>
+      <!--
+DO NOT USE.
+Internal to RAF.
+Test Application EAR.
+-->
+    </dependency>
+    <!-- Admin Console -->
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsAdminConsole</artifactId>
+      <classifier>RetailAppsAdminConsole</classifier>
+      <type>ear</type>
+      <version>${raf.version}</version>
+    </dependency>
+    <!-- Mobile Security -->
+    <dependency>
+      <groupId>oracle.retail.apps.framework</groupId>
+      <artifactId>RetailAppsMobileSecurity</artifactId>
+      <classifier>RetailAppsMobileSecurity</classifier>
+      <type>ear</type>
+      <version>${raf.version}</version>
+    </dependency>
+    <!-- Dependencies TO RGBUDEVTOOLS -->
+    <dependency>
+      <groupId>oracle.retail.internal.dev.rgbudevtools</groupId>
+      <artifactId>jdevcompile</artifactId>
+      <version>${rgbudevtools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.internal.dev.rgbudevtools</groupId>
+      <artifactId>jdevpackage</artifactId>
+      <version>${rgbudevtools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.internal.dev.rgbudevtools</groupId>
+      <artifactId>junitrunner</artifactId>
+      <version>${rgbudevtools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.internal.dev.rgbudevtools</groupId>
+      <artifactId>jythonscripts</artifactId>
+      <version>${rgbudevtools.version}</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.internal.dev.rgbudevtools</groupId>
+      <artifactId>policysetup</artifactId>
+      <version>${rgbudevtools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.internal.dev.rgbudevtools</groupId>
+      <artifactId>static-code-analysis-tools</artifactId>
+      <type>zip</type>
+      <version>${rgbudevtools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.retail.internal.dev.rgbudevtools</groupId>
+      <artifactId>retailAppsBuildInfrastructure</artifactId>
+      <classifier>common_ant_utils</classifier>
+      <type>xml</type>
+      <version>${rgbudevtools.version}</version>
+    </dependency>
+    <!-- from rgbuwlstools -->
+    <dependency>
+      <groupId>oracle.retail.build</groupId>
+      <artifactId>wlstools</artifactId>
+      <version>1.0.8</version>
+      <type>zip</type>
+    </dependency>
+    <!--
+*********************************************************************
+BEGIN: THIRD PARTY LIBRARY DEPENDENCIES
+*********************************************************************
+-->
+    <dependency>
+      <groupId>org.codehaus.groovy</groupId>
+      <artifactId>groovy-all</artifactId>
+      <version>1.8.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ant</groupId>
+      <artifactId>ant-junit</artifactId>
+      <version>1.8.2</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.cobertura</groupId>
+      <artifactId>cobertura</artifactId>
+      <version>1.9.4.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.ant</groupId>
+          <artifactId>ant</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.9</version>
+    </dependency>
+    <dependency>
+      <groupId>asm</groupId>
+      <artifactId>asm</artifactId>
+      <version>1.4.3</version>
+    </dependency>
+    <dependency>
+      <groupId>oro</groupId>
+      <artifactId>oro</artifactId>
+      <version>2.0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib</artifactId>
+      <version>2.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-validator</groupId>
+      <artifactId>commons-validator</artifactId>
+      <version>1.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.3.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.3.2</version>
+      <classifier>sources</classifier>
+    </dependency>
+    <dependency>
+      <groupId>org.jmockit</groupId>
+      <artifactId>jmockit</artifactId>
+      <version>${jmockit.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.mockrunner</groupId>
+      <artifactId>mockrunner</artifactId>
+      <version>0.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.myfaces.test</groupId>
+      <artifactId>myfaces-test20</artifactId>
+      <version>1.0.0-beta-4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.myfaces.test</groupId>
+      <artifactId>myfaces-test20</artifactId>
+      <version>1.0.0-beta-4</version>
+      <classifier>sources</classifier>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.antcontrib</groupId>
+      <artifactId>ant-contrib</artifactId>
+      <version>1.0b3</version>
+    </dependency>
+    <!-- OHW-RC dependencies -->
+    <dependency>
+      <groupId>oracle-help-web</groupId>
+      <artifactId>help-share</artifactId>
+      <version>12.1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle-help-web</groupId>
+      <artifactId>ohw-rcf</artifactId>
+      <version>12.1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle-help-web</groupId>
+      <artifactId>ohw-share</artifactId>
+      <version>12.1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.database</groupId>
+      <artifactId>ojdl</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.database</groupId>
+      <artifactId>xml</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.database</groupId>
+      <artifactId>xmlparserv</artifactId>
+      <version>2.0</version>
+    </dependency>
+    <!-- START of REST Services Dependency-->
+    <dependency>
+      <groupId>org.codehaus.jettison</groupId>
+      <artifactId>jettison</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <!-- Jackson Fast XML Parser -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-base</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-json-provider</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-jaxb-annotations</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <!-- Jersey Test Framework -->
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-grizzly2-http</artifactId>
+      <version>${jersey.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.test-framework</groupId>
+      <artifactId>jersey-test-framework-core</artifactId>
+      <version>${jersey.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.test-framework.providers</groupId>
+      <artifactId>jersey-test-framework-provider-grizzly2</artifactId>
+      <version>${jersey.version}</version>
+    </dependency>
+    <!-- Project Grizzly -->
+    <dependency>
+      <groupId>org.glassfish.grizzly</groupId>
+      <artifactId>grizzly-framework</artifactId>
+      <version>${grizzly.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.grizzly</groupId>
+      <artifactId>grizzly-http</artifactId>
+      <version>${grizzly.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.grizzly</groupId>
+      <artifactId>grizzly-http-server</artifactId>
+      <version>${grizzly.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.grizzly</groupId>
+      <artifactId>grizzly-http-servlet</artifactId>
+      <version>${grizzly.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jayway.jsonpath</groupId>
+      <artifactId>json-path</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jayway.jsonpath</groupId>
+      <artifactId>json-path-assert</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>net.minidev</groupId>
+      <artifactId>json-smart</artifactId>
+      <version>1.0.9</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.5</version>
+    </dependency>
+    <!-- End of REST Services Dependency-->
+    <!--Start OBIEE InContextLaunch dependency -->
+    <dependency>
+      <groupId>oracle.bi.jbips</groupId>
+      <artifactId>nanfwk</artifactId>
+      <version>11.1.1.9</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.bi.jbips</groupId>
+      <artifactId>nansvs</artifactId>
+      <version>11.1.1.9</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.bi.jbips</groupId>
+      <artifactId>bi-jbips-slib</artifactId>
+      <type>ear</type>
+      <version>11.1.1.9</version>
+    </dependency>
+    <!--End OBIEE InContextLaunch dependency -->
+    <!-- HTTP Components Framework (3rd party library -
+downloads commons logging, codec, http client and http core
+jars) -->
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.2</version>
+    </dependency>
+    <!--
+*********************************************************************
+END: THIRD PARTY LIBRARY DEPENDENCIES
+*********************************************************************
+-->
+    <!-- external -->
+    <dependency>
+      <groupId>oracle.database</groupId>
+      <artifactId>ojdbc</artifactId>
+      <version>6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>oracle.database</groupId>
+      <artifactId>orai18n-collation</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <!-- from release_management -->
+    <dependency>
+      <groupId>oracle.retail.internal.dev.release_management</groupId>
+      <artifactId>antinstaller_scripts</artifactId>
+      <version>1.0.1</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>JSP-Runtime</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>JSF</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>JSTL</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>ADF-Page-Flow-Runtime</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>ADF-Controller-Runtime</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>ADF-Controller-Schema</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>ADF-Faces-Runtime-11</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>ADF-Common-Runtime</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>ADF-Web-Runtime</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>MDS-Runtime</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>MDS-Runtime-Dependencies</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>Commons-Beanutils</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>Commons-Logging</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>Commons-Collections</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>Apache-Http-Components</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>ADF-DVT-Faces-Runtime</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>ADF-DVT-Faces-Databinding-Runtime</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.adf.library</groupId>
+      <artifactId>ADF-DVT-Faces-Databinding-MDS-Runtime</artifactId>
+      <version>12.2.1-4-0</version>
+      <type>pom</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>RAFTrainingApp</groupId>
+      <artifactId>Model</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <type>jar</type>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src/</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>${basedir}</directory>
+        <includes>
+          <include>*</include>
+        </includes>
+      </resource>
+    </resources>
+    <outputDirectory>classes/</outputDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <webappDirectory>public_html/</webappDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.oracle.adf.plugin</groupId>
+        <artifactId>ojdeploy</artifactId>
+        <version>12.2.1-4-0</version>
+        <configuration>
+          <ojdeploy>${oracleHome}/jdeveloper/jdev/bin/ojdeploy.exe</ojdeploy>
+          <workspace>${basedir}/../RAFTrainingApp.jws</workspace>
+          <project>ViewController</project>
+          <profile>RAFTrainingApp_ViewController_webapp</profile>
+          <outputfile>${project.build.directory}/${project.build.finalName}.war</outputfile>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>deploy</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <parent>
+    <groupId>com.oracle.adf</groupId>
+    <artifactId>adf-parent</artifactId>
+    <version>12.2.1-4-0</version>
+    <relativePath></relativePath>
+  </parent>
+  <properties>
+    <oracleHome>${env.ORACLE_HOME}</oracleHome>
+    <jersey.version>2.5.1</jersey.version>
+    <jackson.version>2.4.4</jackson.version>
+    <grizzly.version>2.3.8</grizzly.version>
+    <jmockit.version>1.15</jmockit.version>
+  </properties>
+</project>
